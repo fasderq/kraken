@@ -1,10 +1,27 @@
 {
+  "name": "@cryptorock/kraken",
+  "version": "1.0.1",
+  "dependencies": {
+    "ws": "^7.5.1"
+  },
   "devDependencies": {
     "@types/node": "^15.12.5",
     "@types/ws": "^7.4.5"
   },
-  "dependencies": {
-    "rxjs": "^7.1.0",
-    "ws": "^7.5.1"
-  }
+  "description": "Kraken Exchange",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fasderq/kraken.git"
+  },
+  "author": "Alexander Gropyanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fasderq/kraken/issues"
+  },
+  "homepage": "https://github.com/fasderq/kraken#readme"
 }

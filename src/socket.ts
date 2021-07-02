@@ -71,7 +71,6 @@ export class KrakenSocket {
         this.socket = new Socket(endpoint);
         this.socket.on('open', (): void => {
             this.state.connected = true;
-            // console.log('open');
 
             this.pingPong();
             this.handleMessages();
@@ -79,7 +78,6 @@ export class KrakenSocket {
         });
 
         this.socket.on('close', (): void => {
-            console.log('close', this.state);
             this.state.connected = false;
 
             console.log(JSON.stringify(this.subscribedSymbols, null, 2));
@@ -106,7 +104,6 @@ export class KrakenSocket {
     }
 
     private handleMessages(): void {
-        // console.log('handle messages');
         if (!this.socket) throw new Error('Web socket not defined');
 
         this.socket.on('message', (data: Socket.Data): void => {
