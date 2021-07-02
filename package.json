@@ -10,6 +10,9 @@
   },
   "description": "Kraken Exchange",
   "main": "./dist/index.js",
+  "files": [
+    "./dist/index.js"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/fasderq/kraken/issues"
   },
-  "homepage": "https://github.com/fasderq/kraken#readme"
+  "homepage": "https://github.com/fasderq/kraken#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@fasderq"
+  }
 }
