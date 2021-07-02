@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "strictNullChecks": true,
+      "sourceMap": true,
+      "pretty": true,
+      "allowUnreachableCode": true,
+      "noFallthroughCasesInSwitch": false,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitAny": false,
+      "outDir": "./dist/",
+      "typeRoots": [
+        "node_modules/@types",
+        "@types"
+      ],
+      "paths": {
+        "@app/*": ["src/*"]
+      },
+      "baseUrl": "."
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "compileOnSave": true
+  }
+  
