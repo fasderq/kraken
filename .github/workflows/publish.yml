@@ -1,7 +1,10 @@
 name: publish
+
 on:
   push: 
-    branches: master
+    branches:
+      - master
+
 jobs:
   release:
     name: publish
@@ -14,7 +17,9 @@ jobs:
           with:
             node-version: 16
             registry-url: https://registry.npmjs.org
+        - name: build
+          run: yarn build
         - name: publish
-          run: npm publish --access private
+          run: npm publish 
           env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
